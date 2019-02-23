@@ -8,7 +8,7 @@
     "markdown",
     "ascidoc"
   ],
-  "repository": "https://github.com/atom/language-my-language",
+  "repository": "https://github.com/Eonm/atom-writing-env",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

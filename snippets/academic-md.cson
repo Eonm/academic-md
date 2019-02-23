@@ -2,14 +2,106 @@
 # https://github.com/atom/language-javascript/blob/master/snippets/javascript.cson
 
 '.text.md, .source.gfm, .source.asciidoc':
-  'Metadata':
-    'prefix': 'metadata'
+
+  # Header metadata
+  'Book metadata':
+    'prefix': 'book'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">📘 Book</span>'
+    'description': 'Markdown book metadata'
     'body': '''
     ---
     author: $1
     title: $2
+    date: $3
+    documentclass: book
     ---
+
+    $4
     '''
+  'Article metadata':
+    'prefix': 'article'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">🗏 Article</span>'
+    'description': 'Markdown article metadata'
+    'body': '''
+    ---
+    author: $1
+    title: $2
+    date: $3
+    documentclass: article
+    ---
+
+    $4
+    '''
+  'Report metadata':
+    'prefix': 'report'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">📓 Report</span>'
+    'description': 'Markdown report metadata'
+    'body': '''
+    ---
+    author: $1
+    title: $2
+    date: $3
+    documentclass: report
+    ---
+
+    $4
+    '''
+  'Memoir metadata':
+    'prefix': 'memoir'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">🎓 Memoir</span>'
+    'description': 'Markdown report metadata'
+    'body': '''
+    ---
+    author: $1
+    title: $2
+    date: $3
+    documentclass: memoir
+    ---
+
+    $4
+    '''
+  'Reveal.js metadata':
+    'prefix': 'presentation'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">🎓 Reveal.js presentation</span>'
+    'description': 'Markdown Reveal.js metadata'
+    'body': '''
+    ---
+    author: $1
+    title: $2
+    date: $3
+    transition: convex #cube
+    theme: black
+    ---
+    $4
+    '''
+  # Reveal.js
+  'Reveal.js speaker notes':
+    'prefix': 'notes'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">🗈 Reveal.js note</span>'
+    'description': 'A Reveal.js speaker note'
+    'body': '''
+    :::notes
+    $1
+    :::
+    $2
+    '''
+  'Reveal.js slide background image':
+    'prefix': 'background'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Reveal.js slide background image</span>'
+    'description': 'A Reveal.js slide with a custom background image'
+    'body': '''
+    # $1 {.slide: data-background="$2"}
+
+    $3
+    '''
+  # Bibtex
   'Bibliography no cite':
     'prefix': 'bibliography'
     'body': '''
@@ -19,11 +111,82 @@
     ...
     $1
     '''
-  'Reveal.js speaker notes':
-    'prefix': 'notes'
+  'Citation' :
+    'prefix': 'cite'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">📚 Citation</span>'
+    'body': '[@$1, $2] $3'
+
+  # Section level
+  'Unnumbered section' :
+    'prefix': 'section unnumbered'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Unnumbered section</span>'
+    'description': 'An unnumbered markdown section'
     'body': '''
-    :::notes
-    $1
-    :::
+    # $1{-}
+
     $2
     '''
+  'Unnumbered subsection' :
+    'prefix': 'subsection unnumbered '
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Unnumbered subsection</span>'
+    'description': 'An unnumbered markdown subsection'
+    'body': '''
+    ## $1{-}
+
+    $2
+    '''
+  'Unnumbered subsubsection' :
+    'prefix': 'subsubsection unnumbered '
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Unnumbered subsubsection</span>'
+    'description': 'An unnumbered markdown subsubsection'
+    'body': '''
+    ### $1{-}
+
+    $2
+    '''
+  'Section' :
+    'prefix': 'section'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">First level section</span>'
+    'body': '''
+    # $1
+
+    $2
+    '''
+  'Subsection' :
+    'prefix': 'subsection'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Second level section</span>'
+    'body': '''
+    ## $1
+
+    $2
+    '''
+  'Subsubsection' :
+    'prefix': 'subsubsection'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Third level section</span>'
+    'body': '''
+    ### $1
+
+    $2
+    '''
+  'Bold' :
+    'prefix': 'bold'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Bold text</span>'
+    'body': '**$1** $2'
+  'Italic' :
+    'prefix': 'italic'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Italic text</span>'
+    'body': '_$1_ $2'
+  'Superscript' :
+    'prefix': 'sup'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Superscript text</span>'
+    'body': '^$1^ $2'

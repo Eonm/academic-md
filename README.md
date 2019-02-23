@@ -1,5 +1,7 @@
 # Academic Markdown
 
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+
 ![Snippets in action](./academic-md.gif)
 
 _A set of snippets for writing academic materials with markdown._

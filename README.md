@@ -4,7 +4,13 @@
 
 ![Snippets in action](./academic-md.gif)
 
-_A set of snippets for writing academic materials with markdown._
+_A set of atom snippets for writing academic materials with markdown._
+
+## Install
+
+```sh
+  apm install academic-markdown
+```
 
 ## Pandoc metadata
 

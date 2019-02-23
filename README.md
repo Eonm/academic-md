@@ -1,6 +1,6 @@
 # Academic Markdown
 
-![GitHub Logo](./academic-md.gif)
+![Snippets in action](./academic-md.gif)
 
 _A set of snippets for writing academic materials with markdown._
 

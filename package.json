@@ -1,0 +1,16 @@
+{
+  "name": "academic-markdown",
+  "version": "0.0.1",
+  "description": "Extend markdown snippets",
+  "keywords": [
+    "language",
+    "grammar",
+    "markdown",
+    "ascidoc"
+  ],
+  "repository": "https://github.com/atom/language-my-language",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

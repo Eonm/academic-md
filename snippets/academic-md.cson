@@ -1,0 +1,29 @@
+# If you want some example snippets, check out:
+# https://github.com/atom/language-javascript/blob/master/snippets/javascript.cson
+
+'.text.md, .source.gfm, .source.asciidoc':
+  'Metadata':
+    'prefix': 'metadata'
+    'body': '''
+    ---
+    author: $1
+    title: $2
+    ---
+    '''
+  'Bibliography no cite':
+    'prefix': 'bibliography'
+    'body': '''
+    ---
+    nocite: |
+
+    ...
+    $1
+    '''
+  'Reveal.js speaker notes':
+    'prefix': 'notes'
+    'body': '''
+    :::notes
+    $1
+    :::
+    $2
+    '''

@@ -4,7 +4,7 @@
 
 ![Snippets in action](./academic-md.gif)
 
-_A set of atom snippets for writing academic materials with markdown._
+_A set of atom snippets that helps you to write academic materials with markdown._
 
 ## Install
 

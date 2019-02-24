@@ -105,8 +105,7 @@ documentclass: report
 
 ```md
 ---
-nocite: |
-
+nocite: '@*'
 ...
 
 ```

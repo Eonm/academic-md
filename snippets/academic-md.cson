@@ -104,10 +104,12 @@
   # Bibtex
   'Bibliography no cite':
     'prefix': 'bibliography'
+    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Bibliography (all entries)</span>'
+    'description': 'Cite all bibliography entries including uncited references'
     'body': '''
     ---
-    nocite: |
-
+    nocite: '@*'
     ...
     $1
     '''

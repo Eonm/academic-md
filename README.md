@@ -104,7 +104,7 @@ papersize: a4
 ### Papersize _(letter)_
 
 ```md
-papersize: a4
+papersize: letter
 ```
 
 ## Reveal.js snippets

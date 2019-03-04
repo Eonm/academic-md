@@ -6,7 +6,7 @@
   # Header metadata
   'Book metadata':
     'prefix': 'book'
-    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
     'rightLabelHTML': '<span style="color:#ff0">📘 Book</span>'
     'description': 'Markdown book metadata'
     'body': '''
@@ -15,13 +15,14 @@
     title: $2
     date: $3
     documentclass: book
+    classoption: twoside #oneside
     ---
 
     $4
     '''
   'Article metadata':
     'prefix': 'article'
-    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
     'rightLabelHTML': '<span style="color:#ff0">🗏 Article</span>'
     'description': 'Markdown article metadata'
     'body': '''
@@ -30,13 +31,14 @@
     title: $2
     date: $3
     documentclass: article
+    classoption: twoside #oneside
     ---
 
     $4
     '''
   'Report metadata':
     'prefix': 'report'
-    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
     'rightLabelHTML': '<span style="color:#ff0">📓 Report</span>'
     'description': 'Markdown report metadata'
     'body': '''
@@ -45,13 +47,14 @@
     title: $2
     date: $3
     documentclass: report
+    classoption: twoside #oneside
     ---
 
     $4
     '''
   'Memoir metadata':
     'prefix': 'memoir'
-    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
     'rightLabelHTML': '<span style="color:#ff0">🎓 Memoir</span>'
     'description': 'Markdown report metadata'
     'body': '''
@@ -60,13 +63,14 @@
     title: $2
     date: $3
     documentclass: memoir
+    classoption: twoside #oneside
     ---
 
     $4
     '''
   'Reveal.js metadata':
     'prefix': 'presentation'
-    'leftLabelHTML': '<span style="color:#ff0">MD</span>'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
     'rightLabelHTML': '<span style="color:#ff0">🎓 Reveal.js presentation</span>'
     'description': 'Markdown Reveal.js metadata'
     'body': '''
@@ -78,6 +82,41 @@
     theme: black
     ---
     $4
+    '''
+  'Authors':
+    'prefix': 'authors'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Multiple authors</span>'
+    'description': 'Multiple authors in metadata'
+    'body': '''
+    author:
+      - $1
+      - $2
+    '''
+  'Bibliography':
+    'prefix': 'bibliography'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Multiple authors</span>'
+    'description': 'Add a bibliography and a citation style in metadata'
+    'body': '''
+    bibliography: $1
+    csl: $2
+    '''
+  'Paper size a4':
+    'prefix': 'a4'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Paper size</span>'
+    'description': 'Add a a4 paper size'
+    'body': '''
+    papersize: a4
+    '''
+  'Paper size letter':
+    'prefix': 'letter'
+    'leftLabelHTML': '<span style="color:#ff0">MD metadata</span>'
+    'rightLabelHTML': '<span style="color:#ff0">Paper size</span>'
+    'description': 'Add a letter paper size'
+    'body': '''
+    papersize: letter
     '''
   # Reveal.js
   'Reveal.js speaker notes':
@@ -103,7 +142,7 @@
     '''
   # Bibtex
   'Bibliography no cite':
-    'prefix': 'bibliography'
+    'prefix': 'bibliography-no-cite'
     'leftLabelHTML': '<span style="color:#ff0">MD</span>'
     'rightLabelHTML': '<span style="color:#ff0">Bibliography (all entries)</span>'
     'description': 'Cite all bibliography entries including uncited references'

@@ -6,6 +6,10 @@
 
 _A set of atom snippets that helps you to write academic materials with markdown._
 
+## Suggest a snippet
+
+Open an issue [issue](https://github.com/Eonm/academic-md/issues/new?assignees=Eonm&labels=Snippet+submition&template=submit-a-snippet.md&title=%5BAdd+snippet%5D) on github.
+
 ## Install
 
 ```sh
@@ -24,6 +28,7 @@ author:
 title:
 date:
 documentclass: article
+classoption: twoside #oneside
 ---
 
 
@@ -37,6 +42,7 @@ author:
 title:
 date:
 documentclass: book
+classoption: twoside #oneside
 ---
 
 
@@ -49,6 +55,7 @@ author:
 title:
 date:
 documentclass: memoir
+classoption: twoside #oneside
 ---
 
 
@@ -75,9 +82,29 @@ author:
 title:
 date:
 documentclass: report
+classoption: twoside #oneside
 ---
 
 
+```
+
+### Bibliorapy metadata _(bibliography)_
+
+```md
+bibliography:
+csl:
+```
+
+### Papersize _(a4)_
+
+```md
+papersize: a4
+```
+
+### Papersize _(letter)_
+
+```md
+papersize: a4
 ```
 
 ## Reveal.js snippets
@@ -101,7 +128,7 @@ documentclass: report
 
 ## Bibliography
 
-### Cite all bibliography entries including uncited items _(bibliography)_
+### Cite all bibliography entries including uncited items _(bibliography-no-cite)_
 
 ```md
 ---

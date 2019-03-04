@@ -1,12 +1,11 @@
 {
   "name": "academic-markdown",
   "version": "0.3.6",
-  "description": "Extend markdown snippets",
+  "description": "A set of markdown snippets for writting academic papers",
   "keywords": [
     "language",
     "grammar",
-    "markdown",
-    "ascidoc"
+    "markdown"
   ],
   "repository": "https://github.com/Eonm/academic-md",
   "license": "MIT",
